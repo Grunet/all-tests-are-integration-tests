@@ -1,0 +1,18 @@
+{
+    "logs": [
+        {
+            "args": [
+                "   test   "
+            ],
+            "kwargs": {},
+            "return": "   test"
+        },
+        {
+            "args": [
+                ""
+            ],
+            "kwargs": {},
+            "return": ""
+        }
+    ]
+}
