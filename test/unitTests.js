@@ -1,8 +1,11 @@
 const assert = require("assert");
 const sinon = require("sinon");
 
+const { promises: fs } = require("fs");
+
 describe("Array", function () {
   describe("#indexOf()", function () {
+    const interceptedIO = { testIO: [] };
     let callIndex = 0;
 
     before(function () {
@@ -21,9 +24,23 @@ describe("Array", function () {
       const spyCall = Array.prototype.indexOf.getCall(callIndex);
       callIndex++;
 
-      console.log(spyCall.thisValue);
-      console.log(spyCall.args);
-      console.log(spyCall.returnValue);
+      // console.log(spyCall.thisValue);
+      // console.log(spyCall.args);
+      // console.log(spyCall.returnValue);
+
+      interceptedIO.testIO.push({
+        thisValue: spyCall.thisValue,
+        args: spyCall.args,
+        returnValue: spyCall.returnValue,
+      });
+    });
+
+    after(async function () {
+      await fs.mkdir("./intermediate/");
+      await fs.writeFile(
+        "./intermediate/interceptedIO.json",
+        JSON.stringify(interceptedIO, null, 4)
+      );
     });
   });
 });

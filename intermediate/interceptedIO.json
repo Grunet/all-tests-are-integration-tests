@@ -1,0 +1,26 @@
+{
+    "testIO": [
+        {
+            "thisValue": [
+                3,
+                2,
+                1
+            ],
+            "args": [
+                4
+            ],
+            "returnValue": -1
+        },
+        {
+            "thisValue": [
+                3,
+                2,
+                1
+            ],
+            "args": [
+                1
+            ],
+            "returnValue": 2
+        }
+    ]
+}
