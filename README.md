@@ -1,3 +1,1 @@
-# all-tests-are-integration-tests
-
-Experiments can be found in the branches
+Generating test doubles/mocks for consumers to use in their tests based off of unit tests of a service
