@@ -36,9 +36,8 @@ describe("Array", function () {
     });
 
     after(async function () {
-      await fs.mkdir("./intermediate/");
       await fs.writeFile(
-        "./intermediate/interceptedIO.json",
+        "./interceptedIO.json",
         JSON.stringify(interceptedIO, null, 4)
       );
     });
