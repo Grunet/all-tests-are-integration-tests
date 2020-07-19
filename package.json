@@ -4,7 +4,8 @@
   "description": "Generating test doubles/mocks for consumers to use in their tests based off of unit tests of a service",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "consumer_test": "mocha --recursive './consumer_test/*.js'"
   },
   "repository": {
     "type": "git",
