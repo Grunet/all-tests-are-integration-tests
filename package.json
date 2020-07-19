@@ -1,0 +1,22 @@
+{
+  "name": "all-tests-are-integration-tests",
+  "version": "1.0.0",
+  "description": "Generating test doubles/mocks for consumers to use in their tests based off of unit tests of a service",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grunet/all-tests-are-integration-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grunet/all-tests-are-integration-tests/issues"
+  },
+  "homepage": "https://github.com/Grunet/all-tests-are-integration-tests#readme",
+  "dependencies": {
+    "mocha": "^8.0.1"
+  }
+}
